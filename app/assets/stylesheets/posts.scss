@@ -1,0 +1,112 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom:-100px; /* equal to footer height */
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+  height: 100px;
+}
+
+h1, h2, h3 {
+  font-family: "Dosis", sans-serif;
+  text-align: center;
+}
+
+/** NAVIGATION BAR **/
+
+.navbar {
+  background-color: #84dac6;
+}
+
+.navbar-inverse .navbar-nav a {
+  color: #4f7582;
+  text-transform: uppercase;
+  font-family: Acme, Helvetica, Arial, Sans-serif;
+  font-size: 1.6em;
+  letter-spacing: 1.2px;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+}
+
+.navbar-inverse .navbar-nav a:hover {
+  color: #e49b0f;
+  text-decoration: none;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+}
+
+.navbar-inverse .navbar-nav li a {
+  color: #4f7582;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+  color: #e49b0f;
+}
+
+.navbar-inverse .navbar-nav .active a {
+  background-color: #5c988a;
+  color: #e49b0f;
+}
+
+.navbar-inverse .navbar-nav .active a:hover {
+  background-color: #5c988a;
+  color: #e49b0f;
+}
+
+/** FOOTER **/
+
+.footer {
+  height: 100px;
+  background-color: #5c988a;
+}
+
+.footer p {
+  color: #375b52;
+  text-align: center;
+  padding-top: 28px;
+  font-family: Acme, Helvetica, Arial, Sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+/** POSTS INDEX PAGE **/
+
+.post-column {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.post-title h2 {
+  font-family: "Titillium Web", Arial, Sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: left;
+}
+
+.post-img {
+  padding-bottom: 15px;
+}
+
+.post-body p {
+  font-family: Abel, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}

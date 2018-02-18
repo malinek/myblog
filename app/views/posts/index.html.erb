@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Move like a swift</h1>
+<h3>I'm on a journey and I want to share my story. Swifts are inspiring birds to me. They are also very closely linked to my father.</h3>
+
+<div class="container">
+  <div class="row col-sm-12 col-md-8 col-lg-8 post-column">
+  <% @posts.each do |post| %>
+    <div class="post-title">
+      <h2><%= post.title %></h2>
+    </div>
+    <%= image_tag(post.image_url, class:"img-responsive post-img") %>
+    <div class="post-body">
+      <p><%= post.body %></p>
+    </div>
+    <%= link_to 'Show', post %>
+    <%= link_to 'Edit', edit_post_path(post) %>
+    <%= link_to 'Destroy', post, method: :delete, data: {confirm: 'Are you sure?' } %>
+  <% end %>
+  </div><!-- end row col-sm-12 col-md-8 col-lg-8-->
+  <div class="row sidebar col-sm-12 col-md-4 col-lg-4">
+    <h3>Recent posts</h3>
+    <h3>Categories</h3>
+  </div>
+</div><!-- container -->
+
+<br>
+
+<%= link_to 'New Post', new_post_path %>
