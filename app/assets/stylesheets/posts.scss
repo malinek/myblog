@@ -71,6 +71,37 @@ h1, h2, h3 {
   color: #e49b0f;
 }
 
+.navbar-brand {
+  position: absolute;
+  display: block;
+  text-align: center;
+  left: 50%;
+  padding: 0px;
+}
+
+/** HEADER **/
+
+.jumbotron {
+  background-image: url("nongkiaw.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 500px;
+  margin-left: -15px;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+
+.container-fluid .jumbotron {
+  border-radius: 0px;
+}
+
+.welcome-text h1 {
+  color: #eebc22;
+  padding-top: 80px;
+}
+
 /** FOOTER **/
 
 .footer {
