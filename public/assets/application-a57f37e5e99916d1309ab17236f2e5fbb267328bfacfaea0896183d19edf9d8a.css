@@ -1,0 +1,352 @@
+/* line 5, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+* {
+  margin: 0;
+}
+
+/* line 9, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 13, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+body {
+  padding-top: 50px;
+}
+
+/* line 17, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -100px;
+  /* equal to footer height */
+}
+
+/* line 22, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.page-wrap:after {
+  content: "";
+  display: block;
+  height: 100px;
+}
+
+/* line 28, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+h1, h2, h3 {
+  font-family: Abel, Arial, sans-serif;
+  text-align: center;
+}
+
+/** NAVIGATION BAR **/
+/* line 35, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.navbar {
+  background-color: #fffcdd;
+}
+
+/* line 39, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.navbar-inverse .navbar-nav a {
+  color: #e8ca93;
+  text-transform: uppercase;
+  font-family: "Titillium Web", Helvetica, Arial, Sans-serif;
+  font-size: 1.6em;
+  letter-spacing: 1.2px;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+}
+
+/* line 49, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.navbar-inverse .navbar-nav a:hover {
+  color: #fee585;
+  text-decoration: none;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+}
+
+/* line 56, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.navbar-inverse .navbar-nav li a {
+  color: #e8ca93;
+}
+
+/* line 60, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.navbar-inverse .navbar-nav li a:hover {
+  color: #fee585;
+}
+
+/* line 64, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.navbar-inverse .navbar-nav .active a {
+  background-color: #5c988a;
+  color: #fee585;
+}
+
+/* line 69, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.navbar-inverse .navbar-nav .active a:hover {
+  background-color: #5c988a;
+  color: #fee585;
+}
+
+/* line 74, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.navbar-brand {
+  position: absolute;
+  display: block;
+  text-align: center;
+  left: 50%;
+  padding: 0px;
+}
+
+/** HEADER INDEX PAGE**/
+/* line 84, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+#index-page-jumbotron {
+  background-image: url("IMG-3402.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 400px;
+  margin-left: -15px;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+
+/* line 96, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.container-fluid .jumbotron {
+  border-radius: 0px;
+}
+
+/* line 100, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.welcome-text {
+  padding-left: 0px;
+}
+
+/* line 104, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.welcome-text h2 {
+  color: #fee585;
+  text-align: left;
+  margin-top: 0px;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  /* line 111, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+  #index-page-jumbotron {
+    height: 200px;
+  }
+
+  /* line 115, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+  .welcome-text h2 {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+}
+/** FOOTER **/
+/* line 123, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.footer {
+  height: 100px;
+  background-color: #e8ca93;
+}
+
+/* line 128, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.footer p {
+  color: #9a8262;
+  text-align: center;
+  padding-top: 28px;
+  font-family: "Titillium Web", Helvetica, Arial, Sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+}
+
+/** POSTS INDEX PAGE **/
+/* line 139, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.post-column {
+  padding-left: 20px;
+  padding-right: 100px;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  /* line 145, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+  .post-column {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+/* line 151, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.post-title h2 {
+  font-family: "Titillium Web", Arial, Sans-serif;
+  font-weight: 800;
+  text-align: left;
+}
+
+/* line 157, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.post-img {
+  padding-bottom: 15px;
+  width: 640px;
+}
+
+/* line 162, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.post-subtitle {
+  font-family: Abel, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* line 168, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.date-and-button {
+  padding-top: 4px;
+}
+
+/* line 172, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.post-published-at p {
+  font-family: "Titillium Web", Arial, Sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  display: inline-block;
+}
+
+/* line 179, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.post-published-at {
+  display: inline-block;
+}
+
+/* line 183, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.button-show-post {
+  display: inline-block;
+  float: right;
+}
+
+/* line 188, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.btn-default {
+  background-color: #fffcdd;
+  color: #9a8262;
+  border-color: #9a8262;
+}
+
+/* line 194, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.btn-default:hover {
+  background-color: #e4c07e;
+  color: #fff;
+  border-color: #9a8262;
+}
+
+/** SHOW PAGE **/
+/* line 202, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+#show-page-jumbotron {
+  background-image: url("IMG-3402.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 320px;
+  margin-left: -15px;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+
+/* line 214, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.post-body p {
+  font-family: Abel, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+/* line 1, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  /*margin: 33px; */
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #9a8262;
+}
+/* line 29, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

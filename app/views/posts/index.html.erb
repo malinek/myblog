@@ -3,12 +3,10 @@
 <div class="container-fluid">
   <div class="jumbotron" id="index-page-jumbotron">
     <div class="container welcome-text">
-      <h1>Welcome to my blog</h1>
+      <h2>Welcome, so nice you have you here.<br>This is a blog about changing direction<br> in life and how this has made me feel<br>more alive.</h2>
     </div>
   </div>
 </div>
-
-
 <div class="container">
   <div class="row col-sm-12 col-md-8 col-lg-8 post-column">
   <% @posts.each do |post| %>
@@ -17,12 +15,21 @@
     </div>
     <%= image_tag(post.image_url, class:"img-responsive post-img") %>
     <div class="post-body">
+    <div class="post-subtitle">
       <p><%= post.subtitle %></p>
     </div>
-    <div class="post-published-at">
-      <p><%= post.created_at.to_date %></p>
     </div>
-    <%= link_to 'Show', post %>
+    <div class="column date-and-button">
+      <div class="post-published-at">
+        <p><%= post.created_at.strftime("%B %d %Y") %></p>
+      </div>
+      <div class="button button-show-post">
+        <%= link_to 'Read more', post, class: "btn btn-default" %>
+      </div>
+    </div>
+
+
+    
     <%= link_to 'Edit', edit_post_path(post) %>
     <%= link_to 'Destroy', post, method: :delete, data: {confirm: 'Are you sure?' } %>
   <% end %>

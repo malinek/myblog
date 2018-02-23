@@ -26,20 +26,20 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: "Dosis", sans-serif;
+  font-family: Abel, Arial, sans-serif;
   text-align: center;
 }
 
 /** NAVIGATION BAR **/
 
 .navbar {
-  background-color: #84dac6;
+  background-color: #fffcdd;
 }
 
 .navbar-inverse .navbar-nav a {
-  color: #4f7582;
+  color: #e8ca93;
   text-transform: uppercase;
-  font-family: Acme, Helvetica, Arial, Sans-serif;
+  font-family: "Titillium Web", Helvetica, Arial, Sans-serif;
   font-size: 1.6em;
   letter-spacing: 1.2px;
   transition: color 600ms;
@@ -47,28 +47,28 @@ h1, h2, h3 {
 }
 
 .navbar-inverse .navbar-nav a:hover {
-  color: #e49b0f;
+  color: #fee585;
   text-decoration: none;
   transition: color 600ms;
   -webkit-transition: color 600ms;
 }
 
 .navbar-inverse .navbar-nav li a {
-  color: #4f7582;
+  color: #e8ca93;
 }
 
 .navbar-inverse .navbar-nav li a:hover {
-  color: #e49b0f;
+  color: #fee585;
 }
 
 .navbar-inverse .navbar-nav .active a {
   background-color: #5c988a;
-  color: #e49b0f;
+  color: #fee585;
 }
 
 .navbar-inverse .navbar-nav .active a:hover {
   background-color: #5c988a;
-  color: #e49b0f;
+  color: #fee585;
 }
 
 .navbar-brand {
@@ -82,12 +82,12 @@ h1, h2, h3 {
 /** HEADER INDEX PAGE**/
 
 #index-page-jumbotron {
-  background-image: url("nongkiaw.jpg");
+  background-image: url("IMG-3402.jpg");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
-  height: 500px;
+  height: 400px;
   margin-left: -15px;
   margin-top: -15px;
   margin-right: -15px;
@@ -97,24 +97,40 @@ h1, h2, h3 {
   border-radius: 0px;
 }
 
-.welcome-text h1 {
-  color: #eebc22;
-  padding-top: 80px;
+.welcome-text {
+  padding-left: 0px;
+}
+
+.welcome-text h2 {
+  color: #fee585;
+  text-align: left;
+  margin-top: 0px;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  #index-page-jumbotron {
+    height: 200px;
+  }
+
+  .welcome-text h2 {
+    font-size: 20px;
+    padding-left: 10px;
+  }
 }
 
 /** FOOTER **/
 
 .footer {
   height: 100px;
-  background-color: #5c988a;
+  background-color: #e8ca93;
 }
 
 .footer p {
-  color: #375b52;
+  color: #9a8262;
   text-align: center;
   padding-top: 28px;
-  font-family: Acme, Helvetica, Arial, Sans-serif;
-  font-weight: 400;
+  font-family: "Titillium Web", Helvetica, Arial, Sans-serif;
+  font-weight: 800;
   font-size: 26px;
 }
 
@@ -122,24 +138,63 @@ h1, h2, h3 {
 
 .post-column {
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 100px;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .post-column {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .post-title h2 {
   font-family: "Titillium Web", Arial, Sans-serif;
-  text-transform: uppercase;
   font-weight: 800;
   text-align: left;
 }
 
 .post-img {
   padding-bottom: 15px;
+  width: 640px;
 }
 
-.post-body p {
+.post-subtitle {
   font-family: Abel, Arial, sans-serif;
   font-size: 20px;
   line-height: 1.5;
+}
+
+.date-and-button {
+  padding-top: 4px;
+}
+
+.post-published-at p {
+  font-family: "Titillium Web", Arial, Sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.post-published-at {
+  display: inline-block;
+}
+
+.button-show-post {
+  display: inline-block;
+  float: right;
+}
+
+.btn-default {
+  background-color: #fffcdd;
+  color: #9a8262;
+  border-color: #9a8262;
+}
+
+.btn-default:hover {
+  background-color: #e4c07e;
+  color: #fff;
+  border-color: #9a8262;
 }
 
 /** SHOW PAGE **/
@@ -154,4 +209,10 @@ h1, h2, h3 {
   margin-left: -15px;
   margin-top: -15px;
   margin-right: -15px;
+}
+
+.post-body p {
+  font-family: Abel, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
 }
