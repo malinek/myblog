@@ -28,18 +28,18 @@
       </div>
     </div>
 
-
-    
     <%= link_to 'Edit', edit_post_path(post) %>
     <%= link_to 'Destroy', post, method: :delete, data: {confirm: 'Are you sure?' } %>
   <% end %>
   </div><!-- end row col-sm-12 col-md-8 col-lg-8-->
   <div class="row sidebar col-sm-12 col-md-4 col-lg-4">
-    <h3>Recent posts</h3>
-    <h3>Categories</h3>
-  </div>
-</div><!-- container -->
+    <div class="column about-me">
+      <h3>About me</h3>
+    </div>
+    <div class="column categories">
+      <h3>Categories</h3>
+    </div>
+  </div><!-- end row col-sm12 col-md-8 col-lg-8-->
+</div><!-- container-fluid -->
 
 <br>
-
-<%= link_to 'New Post', new_post_path %>

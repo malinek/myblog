@@ -41,7 +41,6 @@ h1, h2, h3 {
   text-transform: uppercase;
   font-family: "Titillium Web", Helvetica, Arial, Sans-serif;
   font-size: 1.6em;
-  letter-spacing: 1.2px;
   transition: color 600ms;
   -webkit-transition: color 600ms;
 }
@@ -72,10 +71,11 @@ h1, h2, h3 {
 }
 
 .navbar-brand {
+  float: none;
   position: absolute;
   display: block;
   text-align: center;
-  left: 50%;
+  width: 100%;
   padding: 0px;
 }
 
