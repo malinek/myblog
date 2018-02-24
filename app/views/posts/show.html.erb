@@ -3,25 +3,31 @@
 <div class="container-fluid">
   <div class="jumbotron" id="show-page-jumbotron">
     <div class="container show-page-text">
-      <h1>This is my blog</h1>
+      <h1>Enjoy every moment</h1>
     </div>
   </div>
 </div>
-
 <div class="container">
-  <div class="col-md-12 col-sm-12" id="show-post" data-post-id="<%=@post.id %>">
-    <h2>
-      <%= @post.title %>
-    </h2>
-    <h3>
-      <%= @post.created_at.strftime("%B %d %Y") %>
-    </h3>
-    <%= image_tag(@post.image_url, class: "img-responsive") %>
-    <p>
-      <%= @post.body %>
-    </p>
-  </div>
-</div>
+  <div class="col-sm-12 col-md-9 col-lg-9" id="show-post" data-post-id="<%=@post.id %>">
+    <div class="post-title">
+      <h2><%= @post.title %></h2>
+    </div>
+    <div class="post-published-at">
+      <p><%= @post.created_at.strftime("%B %d %Y") %></p>
+    </div>
+    <%= image_tag(@post.image_url, class: "img-responsive img-show") %>
+    <div class="post-body">
+      <p><%= @post.body %></p>
+    </div>
+    <div class="button button-back-post">
+    <%= link_to 'Back', posts_path, class: "btn btn-default" %>
+    </div>
+  </div><!-- end col-sm-12 col-md-9 col-lg-9 -->
+  <div class="col-sm-12 col-md-3 col-lg-3">
+    <div class="comments">
+      <h2>Comments</h2>
+    </div>
+  </div><!-- end col-sm-12 col-md-3 col-lg-3 -->
+</div><!-- end container -->
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+

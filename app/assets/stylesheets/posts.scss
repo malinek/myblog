@@ -200,19 +200,34 @@ h1, h2, h3 {
 /** SHOW PAGE **/
 
 #show-page-jumbotron {
-  background-image: url("IMG-3402.jpg");
+  background-image: url("IMG-3566.jpg");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
-  height: 320px;
+  height: 400px;
   margin-left: -15px;
   margin-top: -15px;
   margin-right: -15px;
 }
 
+.show-page-text h1 {
+  color: #2e271d;
+  margin-top: 40px;
+  font-weight: 800;
+}
+
 .post-body p {
   font-family: Abel, Arial, sans-serif;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.2;
+  margin-top: 20px;
+}
+
+.button-back-post {
+  margin-bottom: 10px;
+}
+
+.comments {
+  margin-top: 90px;
 }
