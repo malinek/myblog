@@ -7,6 +7,7 @@
     </div>
   </div>
 </div>
+
 <div class="container">
   <div class="row col-sm-12 col-md-8 col-lg-8 post-column">
   <% @posts.each do |post| %>
@@ -27,12 +28,13 @@
     </div>
   <% end %>
   </div><!-- end row col-sm-12 col-md-8 col-lg-8-->
-  <div class="row col-sm-12 col-md-4 col-lg-4">
-    <div class="column about-me">
-      <h3>About me</h3>
+  <div class="column-right col-sm-12 col-md-4 col-lg-4">
+    <div class="about-me">
+      <h2>About me</h2>
+        <p>This is my place to tell some stories. Stories from my current life and stories from the journey I have been on since I left my previous career in Sweden.<br><br>To read more about swifts and why they inspire me so much please visit the <%= link_to "about ", static_pages_about_path %>page.</p>
     </div>
-    <div class="column categories">
-      <h3>Categories</h3>
+    <div class="categories">
+      <h2>Categories</h2>
     </div>
-  </div><!-- end row col-sm12 col-md-8 col-lg-8-->
-</div><!-- container-fluid -->
+  </div><!-- end column-right col-sm12 col-md-8 col-lg-8-->
+</div><!-- container -->

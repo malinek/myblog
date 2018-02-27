@@ -167,6 +167,7 @@ h1, h2, h3 {
 
 .date-and-button {
   padding-top: 4px;
+  margin-bottom: 15px;
 }
 
 .post-published-at p {
@@ -196,6 +197,23 @@ h1, h2, h3 {
   color: #fff;
   border-color: #9a8262;
 }
+
+/** ABOUT AND CATEGORIES COLUMN **/
+
+.about-me h2 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.about-me p {
+  font-size: 22px;
+}
+
+.categories h2 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
 
 /** SHOW PAGE **/
 
