@@ -207,11 +207,19 @@ h1, h2, h3 {
 
 .about-me p {
   font-size: 22px;
+  font-family: Abel, Arial, sans-serif;
 }
 
 .categories h2 {
   font-size: 30px;
   font-weight: 800;
+}
+
+.tag_cloud {
+  line-height: 1.6em;
+  .s { font-size: 0.6em; }
+  .m { font-size: 1.0em; }
+  .l { font-size: 1.4em; }
 }
 
 

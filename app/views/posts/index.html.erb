@@ -35,6 +35,14 @@
     </div>
     <div class="categories">
       <h2>Categories</h2>
+      <div class="tag_cloud">
+        <% tag_cloud Post.tag_counts, %w{s m l} do |tag, css_class| %>
+          <div class="btn btn-default">
+            <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+          </div>
+        <% end %>
+      </div>
     </div>
   </div><!-- end column-right col-sm12 col-md-8 col-lg-8-->
 </div><!-- container -->
+
