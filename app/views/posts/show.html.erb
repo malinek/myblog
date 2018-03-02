@@ -12,7 +12,7 @@
     <div class="post-title">
       <h2><%= @post.title %></h2>
     </div>
-    <div class="post-published-at">
+    <div class="post-published-at-show">
       <p><%= @post.created_at.strftime("%B %d %Y") %></p>
     </div>
     <%= image_tag(@post.image_url, class: "img-responsive img-show") %>

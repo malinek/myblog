@@ -8,27 +8,36 @@
   </div>
 </div>
 
-<div class="container">
-  <div class="row col-sm-12 col-md-8 col-lg-8 post-column">
-  <% @posts.each do |post| %>
-    <div class="post-title">
-      <h2><%= post.title %></h2>
+<div class="container-fluid">
+  <div class="row-left col-sm-12 col-md-9 col-lg-9 post-column">
+    
+    <% @posts.each do |post| %>
+      <div class="col-sm-12 col-md-12 col-lg-6">
+        <div class="post-title">
+          <h2><%= post.title %></h2>
+        </div>
+        <%= image_tag(post.image_url, class:"img-responsive post-img") %>
+        <div class="post-subtitle">
+          <p><%= post.subtitle %></p>
+        </div>
+        <div class="column date-and-button">
+          <div class="post-published-at">
+            <p><%= post.created_at.strftime("%B %d %Y") %></p>
+          </div>
+          <div class="button button-show-post">
+            <%= link_to 'Read more', post, class: "btn btn-default" %>
+          </div>
+        </div>
+      </div><!-- end col-sm-12 col-md-12 col-lg-6 -->
+    <% end %>
+
+    <div class="flickr_pagination">
+      <%= will_paginate @posts %>
     </div>
-    <%= image_tag(post.image_url, class:"img-responsive post-img") %>
-    <div class="post-subtitle">
-      <p><%= post.subtitle %></p>
-    </div>
-    <div class="column date-and-button">
-      <div class="post-published-at">
-        <p><%= post.created_at.strftime("%B %d %Y") %></p>
-      </div>
-      <div class="button button-show-post">
-        <%= link_to 'Read more', post, class: "btn btn-default" %>
-      </div>
-    </div>
-  <% end %>
-  </div><!-- end row col-sm-12 col-md-8 col-lg-8-->
-  <div class="column-right col-sm-12 col-md-4 col-lg-4">
+
+  </div><!-- end row col-sm-12 col-md-9 col-lg-9-->
+
+  <div class="row-right col-sm-12 col-md-3 col-lg-3">
     <div class="about-me">
       <h2>About me</h2>
         <p>This is my place to tell some stories. Stories from my current life and stories from the journey I have been on since I left my previous career in Sweden.<br><br>To read more about swifts and why they inspire me so much please visit the <%= link_to "about ", static_pages_about_path %>page.</p>
@@ -43,6 +52,9 @@
         <% end %>
       </div>
     </div>
-  </div><!-- end column-right col-sm12 col-md-8 col-lg-8-->
-</div><!-- container -->
+  </div><!-- end row col-sm-12 col-md-3 col-lg-3-->
+
+</div><!-- container-fluid -->
+
+
 
