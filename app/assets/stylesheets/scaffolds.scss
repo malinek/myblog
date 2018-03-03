@@ -22,15 +22,16 @@ pre {
 a {
   color: #000;
 
-  &:visited {
+  /**&:visited {
     color: #9a8262;
-  }
+  } **/
 
   &:hover {
-    color: #fff;
-    background-color: #000;
+    color: #006666;
+    background-color: #fff;
+    text-decoration: none;
   }
-}
+} 
 
 th {
   padding-bottom: 5px;

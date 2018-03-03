@@ -22,7 +22,7 @@ body {
 .page-wrap:after {
   content: "";
   display: block;
-  height: 100px;
+  height: 150px;
 }
 
 h1, h2, h3 {
@@ -57,7 +57,7 @@ h1, h2, h3 {
 }
 
 .navbar-inverse .navbar-nav li a:hover {
-  color: #fee585;
+  color: #006666;
 }
 
 .navbar-inverse .navbar-nav .active a {
@@ -102,7 +102,7 @@ h1, h2, h3 {
 }
 
 .welcome-text h2 {
-  font-family: Amaranth, Arial, sans-serif;
+  font-family: "Josefin Sans", Amaranth, Arial, sans-serif;
   color: #fee585;
   text-align: left;
   margin-top: 0px;
@@ -122,17 +122,28 @@ h1, h2, h3 {
 /** FOOTER **/
 
 .footer {
-  height: 100px;
-  background-color: #e8ca93;
+  height: 150px;
+  background-color: #dbb46c;
+  text-align: center;
+}
+
+.fa {
+    padding: 15px;
+    color: #006666;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    color: #006666;
+    background-color: transparent;
 }
 
 .footer p {
-  color: #9a8262;
-  text-align: center;
-  padding-top: 28px;
-  font-family: Amaranth, Arial, Sans-serif;
+  color: #006666;
+  font-family: "Josefin Sans", Arial, Sans-serif;
   font-weight: 800;
   font-size: 30px;
+  padding-top: 10px;
 }
 
 /** POSTS INDEX PAGE **/
@@ -150,8 +161,7 @@ h1, h2, h3 {
 }
 
 .post-title h2 {
-  font-family: Amaranth, Arial, Sans-serif;
-  font-weight: 800;
+  font-family: "Josefin Sans", Amaranth, Arial, Sans-serif;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -168,15 +178,15 @@ h1, h2, h3 {
 }
 
 .date-and-button {
-  padding-top: 4px;
   margin-bottom: 15px;
 }
 
 .post-published-at p {
-  font-family: Amaranth, Arial, Sans-serif;
+  font-family: "Josefin Sans", Amaranth, Arial, Sans-serif;
   font-weight: 800;
   font-size: 18px;
   display: inline-block;
+  line-height: 34px;
 }
 
 .post-published-at {
@@ -208,21 +218,21 @@ h1, h2, h3 {
   .flickr_pagination a, .flickr_pagination span, .flickr_pagination em {
     padding: 0.2em 0.5em; }
   .flickr_pagination .disabled {
-    color: #aaaaaa; }
+    color: #333333; }
   .flickr_pagination .current {
     font-style: normal;
     font-weight: bold;
-    color: #17765f; }
+    color: #db7d6c; }
   .flickr_pagination a {
-    border: 1px solid #dddddd;
-    color: #f2a84d;
+    border: 1px solid #edbeb5;
+    color: #db7d6c;
     text-decoration: none; }
     .flickr_pagination a:hover, .flickr_pagination a:focus {
-      border-color: #003366;
-      background: #f2a84d;
+      border-color: #af6456;
+      background: #db7d6c;
       color: white; }
   .flickr_pagination .page_info {
-    color: #aaaaaa;
+    color: #333333;
     padding-top: 0.8em; }
   .flickr_pagination .previous_page, .flickr_pagination .next_page {
     border-width: 2px; }
@@ -234,9 +244,8 @@ h1, h2, h3 {
 /** ABOUT AND CATEGORIES COLUMN **/
 
 .about-me h2 {
-  font-family: Amaranth, Arial, sans-serif;
+  font-family: "Josefin Sans", Amaranth, Arial, sans-serif;
   font-size: 30px;
-  font-weight: 800;
 }
 
 .about-me p {
@@ -245,9 +254,8 @@ h1, h2, h3 {
 }
 
 .categories h2 {
-  font-family: Amaranth, Arial, sans-serif;
+  font-family: "Josefin Sans", Amaranth, Arial, sans-serif;
   font-size: 30px;
-  font-weight: 800;
 }
 
 .tag_cloud {
@@ -273,14 +281,14 @@ h1, h2, h3 {
 }
 
 .btn-info a:visited {
-  color: #fff;
+  color: #000;
 }
 
 
 /** SHOW PAGE **/
 
 #show-page-jumbotron {
-  background-image: url("IMG-3566.jpg");
+  background-image: url("hostel.jpg");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -292,14 +300,13 @@ h1, h2, h3 {
 }
 
 .show-page-text h1 {
+  font-family: "Josefin Sans", Amaranth, Arial, sans-serif;
   color: #2e271d;
   margin-top: 40px;
-  font-weight: 800;
 }
 
 .post-published-at-show p {
-  font-family: Amaranth, Arial, Sans-serif;
-  font-weight: 800;
+  font-family: "Josefin Sans", Amaranth, Arial, Sans-serif;
   font-size: 20px;
   text-align: center;
   margin-left: auto;
@@ -316,11 +323,11 @@ h1, h2, h3 {
 .tag-link a:hover {
   text-decoration: none;
   background-color: transparent;
-  color: black;
+  color: #006666;
 }
 
 .tag-link p {
-  font-family: Amaranth, Arial, sans-serif;
+  font-family: "Josefin Sans", Amaranth, Arial, sans-serif;
   font-size: 20px;
   font-weight: 800;
 }
