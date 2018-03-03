@@ -1,0 +1,532 @@
+/* line 5, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+* {
+  margin: 0;
+}
+
+/* line 9, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 13, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+body {
+  padding-top: 50px;
+}
+
+/* line 17, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -100px;
+  /* equal to footer height */
+}
+
+/* line 22, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.page-wrap:after {
+  content: "";
+  display: block;
+  height: 150px;
+}
+
+/* line 28, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+h1, h2, h3 {
+  font-family: Abel, Arial, sans-serif;
+  text-align: center;
+}
+
+/** NAVIGATION BAR **/
+/* line 35, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.navbar {
+  background-color: #fffcdd;
+}
+
+/* line 39, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.navbar-inverse .navbar-nav a {
+  color: #e8ca93;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", "Titillium Web", Helvetica, Arial, Sans-serif;
+  font-size: 1.4em;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+}
+
+/* line 48, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.navbar-inverse .navbar-nav a:hover {
+  color: #fee585;
+  text-decoration: none;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+}
+
+/* line 55, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.navbar-inverse .navbar-nav li a {
+  color: #e8ca93;
+}
+
+/* line 59, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.navbar-inverse .navbar-nav li a:hover {
+  color: #006666;
+}
+
+/* line 63, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.navbar-inverse .navbar-nav .active a {
+  background-color: #5c988a;
+  color: #fee585;
+}
+
+/* line 68, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.navbar-inverse .navbar-nav .active a:hover {
+  background-color: #5c988a;
+  color: #fee585;
+}
+
+/* line 73, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.navbar-brand {
+  float: none;
+  position: absolute;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 0px;
+}
+
+/** HEADER INDEX PAGE**/
+/* line 84, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+#index-page-jumbotron {
+  background-image: url("IMG-3402.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 400px;
+  margin-left: -15px;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+
+/* line 96, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.container-fluid .jumbotron {
+  border-radius: 0px;
+}
+
+/* line 100, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.welcome-text {
+  padding-left: 0px;
+}
+
+/* line 104, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.welcome-text h2 {
+  font-family: "Josefin Sans", Amaranth, Arial, sans-serif;
+  color: #fee585;
+  text-align: left;
+  margin-top: 0px;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  /* line 112, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+  #index-page-jumbotron {
+    height: 200px;
+  }
+
+  /* line 116, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+  .welcome-text h2 {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+}
+/** FOOTER **/
+/* line 124, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.footer {
+  height: 150px;
+  background-color: #dbb46c;
+  text-align: center;
+}
+
+/* line 130, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.fa {
+  padding: 15px;
+  color: #006666;
+}
+
+/* line 135, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.fa:hover {
+  opacity: 0.7;
+  color: #006666;
+  background-color: transparent;
+}
+
+/* line 141, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.footer p {
+  color: #006666;
+  font-family: "Josefin Sans", Arial, Sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+/** POSTS INDEX PAGE **/
+/* line 151, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.post-column {
+  padding-left: 20px;
+  padding-right: 100px;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  /* line 157, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+  .post-column {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+/* line 163, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.post-title h2 {
+  font-family: "Josefin Sans", Amaranth, Arial, Sans-serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 170, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.post-img {
+  padding-bottom: 15px;
+  width: 640px;
+}
+
+/* line 175, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.post-subtitle p {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 18px;
+}
+
+/* line 180, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.date-and-button {
+  margin-bottom: 15px;
+}
+
+/* line 184, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.post-published-at p {
+  font-family: "Josefin Sans", Amaranth, Arial, Sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  display: inline-block;
+  line-height: 34px;
+}
+
+/* line 192, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.post-published-at {
+  display: inline-block;
+}
+
+/* line 196, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.button-show-post {
+  display: inline-block;
+  float: right;
+  margin-bottom: 20px;
+}
+
+/* line 202, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.btn-default {
+  background-color: #fffcdd;
+  color: #9a8262;
+  border-color: #9a8262;
+}
+
+/* line 208, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.btn-default:hover {
+  background-color: #e4c07e;
+  color: #fff;
+  border-color: #9a8262;
+}
+
+/* line 214, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.flickr_pagination {
+  text-align: center;
+  padding: 0.3em;
+  cursor: default;
+}
+
+/* line 218, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.flickr_pagination a, .flickr_pagination span, .flickr_pagination em {
+  padding: 0.2em 0.5em;
+}
+
+/* line 220, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.flickr_pagination .disabled {
+  color: #333333;
+}
+
+/* line 222, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.flickr_pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  color: #db7d6c;
+}
+
+/* line 226, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.flickr_pagination a {
+  border: 1px solid #edbeb5;
+  color: #db7d6c;
+  text-decoration: none;
+}
+
+/* line 230, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.flickr_pagination a:hover, .flickr_pagination a:focus {
+  border-color: #af6456;
+  background: #db7d6c;
+  color: white;
+}
+
+/* line 234, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.flickr_pagination .page_info {
+  color: #333333;
+  padding-top: 0.8em;
+}
+
+/* line 237, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.flickr_pagination .previous_page, .flickr_pagination .next_page {
+  border-width: 2px;
+}
+
+/* line 239, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.flickr_pagination .previous_page {
+  margin-right: 1em;
+}
+
+/* line 241, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.flickr_pagination .next_page {
+  margin-left: 1em;
+}
+
+/** ABOUT AND CATEGORIES COLUMN **/
+/* line 246, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.about-me h2 {
+  font-family: "Josefin Sans", Amaranth, Arial, sans-serif;
+  font-size: 30px;
+}
+
+/* line 251, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.about-me p {
+  font-size: 18px;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+/* line 256, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.categories h2 {
+  font-family: "Josefin Sans", Amaranth, Arial, sans-serif;
+  font-size: 30px;
+}
+
+/* line 261, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.tag_cloud {
+  line-height: 1.6em;
+}
+/* line 263, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.tag_cloud .s {
+  font-size: 0.8em;
+}
+/* line 264, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.tag_cloud .m {
+  font-size: 1.2em;
+}
+/* line 265, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.tag_cloud .l {
+  font-size: 1.6em;
+}
+
+/* line 268, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.btn-info {
+  background-color: #f2a84d;
+  border-color: #f09c35;
+}
+
+/* line 273, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.btn-info:hover {
+  background-color: #17765f;
+  border-color: #0e4739;
+}
+
+/* line 278, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.btn-info a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* line 283, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.btn-info a:visited {
+  color: #000;
+}
+
+/** SHOW PAGE **/
+/* line 290, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+#show-page-jumbotron {
+  background-image: url("hostel.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 400px;
+  margin-left: -15px;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+
+/* line 302, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.show-page-text h1 {
+  font-family: "Josefin Sans", Amaranth, Arial, sans-serif;
+  color: #2e271d;
+  margin-top: 40px;
+}
+
+/* line 308, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.post-published-at-show p {
+  font-family: "Josefin Sans", Amaranth, Arial, Sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 316, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.post-body p {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-top: 20px;
+}
+
+/* line 323, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.tag-link a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  color: #006666;
+}
+
+/* line 329, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.tag-link p {
+  font-family: "Josefin Sans", Amaranth, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* line 335, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.button-back-post {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
+}
+
+/* line 344, /home/malin/Desktop/myblog/app/assets/stylesheets/posts.scss */
+.comments {
+  margin-top: 90px;
+}
+/* line 1, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  /*margin: 33px; */
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: Abel, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* line 16, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+  /**&:visited {
+    color: #9a8262;
+  } **/
+}
+/* line 29, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #006666;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+/* line 36, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 40, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 45, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 50, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 54, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 60, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 67, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 77, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 83, /home/malin/Desktop/myblog/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
