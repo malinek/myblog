@@ -32,7 +32,9 @@
     <% end %>
 
     <div class="flickr_pagination">
-      <%= will_paginate @posts %>
+      <% unless @posts.empty? %>
+        <%= will_paginate @posts %>
+      <% end %>
     </div>
 
   </div><!-- end row col-sm-12 col-md-9 col-lg-9-->
