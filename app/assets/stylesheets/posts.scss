@@ -30,6 +30,13 @@ h1, h2, h3 {
   text-align: center;
 }
 
+#notice, #alert {
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
 /** NAVIGATION BAR **/
 
 .navbar {
