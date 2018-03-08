@@ -21,13 +21,9 @@ pre {
 a {
   color: #000;
 
-  &:visited {
-    color: #666;
-  }
-
   &:hover {
-    color: #fff;
-    background-color: #000;
+    color: #cc8d60;;
+    background-color: transparent;
   }
 }
 
@@ -43,10 +39,6 @@ div {
   &.field, &.actions {
     margin-bottom: 10px;
   }
-}
-
-#notice {
-  color: green;
 }
 
 .field_with_errors {

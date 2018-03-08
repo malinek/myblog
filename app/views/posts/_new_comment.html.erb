@@ -1,12 +1,12 @@
-<h4>Leave a comment</h4>
+<h4>You are welcome to leave a comment</h4>
 <%= form_for([@post, @post.comments.build]) do |f| %>
   <p>
-    <%= f.text_area :body %>
+    <%= f.text_area(:body, class: "comment-form text") %>
   </p>
   <p>
-    <%= f.text_field :name, placeholder: "Name" %>
+    <%= f.text_field(:name, placeholder: "*Name", class: "comment-form name") %>
   </p>
   <p>
-    <%= f.submit "Submit" %>
+    <%= f.submit("Submit", class: "btn btn-info") %>
   </p>
 <% end %>

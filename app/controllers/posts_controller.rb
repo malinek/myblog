@@ -4,21 +4,16 @@ class PostsController < ApplicationController
 
   # GET /posts
   # GET /posts.json
+ 
   def index
-    
+    @posts = Post.all.paginate(page: params[:page], per_page: 6)
     if params[:tag]
       @posts = Post.tagged_with(params[:tag]).paginate(page: params[:page], per_page: 6)
-    else
-      @posts = Post.all.paginate(page: params[:page], per_page: 6)
     end
-
     if params[:q]
       search_term = params[:q]
       @posts = Post.search(search_term).paginate(page: params[:page], per_page: 6)
-    else
-      @posts = Post.all.paginate(page: params[:page], per_page: 6)
     end
-
   end
 
   # GET /posts/1
@@ -86,4 +81,5 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:title, :body, :image_url, :subtitle, :tag_list)
     end
+
 end
