@@ -3,19 +3,69 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .about-page {
-	background-image: url("vermont2.jpg");
-	height: 800px;
+  background-image: url("vermont2.jpg");
+  height: 800px;
 }
 
 .about-text h2, .about-swifts h2 {
-	font-family: "Josefin Sans", Helvetica, Arial, Sans-serif;
-	color: #413620;
-	margin-left: 100px;
-	margin-right: 100px;
-	font-size: 26px;
-	border-style: solid;
-	border-radius: 20px;
-	padding: 10px;
-	background-color: #fffcdd;
-	opacity: 0.7;
+  font-family: "Open Sans", Sans-serif;
+  color: #413620;
+  font-size: 16px;
+  border-style: solid;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #fffcdd;
+  opacity: 0.7;
+  border-color: #fffcdd;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-text {
+  padding-top: 60px;
+}
+
+.about-swifts {
+  padding-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .img-swifts {
+    height: 200px;
+    width: 200px
+  }
+
+  .about-text {
+    padding-top: 10px;
+  }
+
+  .about-swifts {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-page {
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .img-swifts {
+    height: 250px;
+    width: 250px
+  }
+  
+  .about-text {
+    padding-top: 10px;
+  }
+
+  .about-swifts {
+    padding-top: 10px;
+  }
 }
