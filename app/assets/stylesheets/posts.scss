@@ -288,20 +288,20 @@ h1, h2, h3 {
   .flickr_pagination .current {
     font-style: normal;
     font-weight: bold;
-    color: #db7d6c; }
+    color: #2e271d; }
   .flickr_pagination a {
-    border: 1px solid #edbeb5;
-    color: #db7d6c;
+    border: 1px solid #cc8d60;
+    color: #cc8d60;
     text-decoration: none; }
     .flickr_pagination a:hover, .flickr_pagination a:focus {
-      border-color: #af6456;
-      background: #db7d6c;
+      border-color: #cc8d60;
+      background: #ffbd7f;
       color: white; }
   .flickr_pagination .page_info {
     color: #333333;
     padding-top: 0.8em; }
   .flickr_pagination .previous_page, .flickr_pagination .next_page {
-    border-width: 2px; }
+    border-width: 1px; }
   .flickr_pagination .previous_page {
     margin-right: 1em; }
   .flickr_pagination .next_page {

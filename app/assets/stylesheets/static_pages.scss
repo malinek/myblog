@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/** ABOUT PAGE **/
+
 .about-page {
   background-image: url("vermont2.jpg");
   height: 800px;
@@ -68,4 +70,74 @@
     padding-top: 10px;
   }
 }
+
+/** CONTACT PAGE **/
+
+h2 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.form-control {
+  background-color: #fffcdd;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #2e271d;
+}
+
+.button-contactpage {
+  display: block;
+  margin: auto;
+  text-align: center;
+  border-color: #2e271d;
+  color: #2e271d;
+  background-color: #fffcdd;
+  border-width: 1px;
+}
+
+/** THANK YOU PAGE **/
+
+
+
+.message {
+  margin-top: 100px;
+  background-color: #fffcdd;
+  border-style: double;
+  border-width: 10px;
+  border-color: #2e271d;
+}
+
+@media (max-width: 768px) {
+  .message {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+  }
+}
+
+@media (max-width: 992px) {
+  .message {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+  }
+}
+
 
