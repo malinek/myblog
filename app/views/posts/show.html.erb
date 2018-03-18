@@ -15,7 +15,7 @@
     </div>
     <%= image_tag(@post.image_url, class: "img-responsive img-show") %>
     <div class="post-body">
-      <p><%= @post.body %></p>
+      <p><%= simple_format(@post.body) %></p>
     </div>
     <div class="tag-link">
       <p>Categories: <%= raw(@post.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')) %></p>
