@@ -33,12 +33,12 @@ h1, h2, h3 {
 /** NAVIGATION BAR **/
 
 .navbar {
-  background-color: #fffcdd;
+  background-color: #f3f9fa;
   border: none;
 }
 
 .navbar-inverse .navbar-nav a {
-  color: #ffb178;
+  color: #6e9ca6;
   text-transform: uppercase;
   font-family: "Josefin Sans", "Titillium Web", Helvetica, Arial, Sans-serif;
   font-size: 24px;
@@ -54,7 +54,7 @@ h1, h2, h3 {
 }
 
 .navbar-inverse .navbar-nav li a {
-  color: #ffb178;
+  color: #6e9ca6;
 }
 
 .navbar-inverse .navbar-nav li a:hover {
@@ -86,7 +86,7 @@ h1, h2, h3 {
 
 .search-field {
   border-color: #000;
-  background-color: #fffcdd;
+  background-color: #f3f9fa;
   border-left: none;
   border-top: none;
   border-right: none;
@@ -190,29 +190,29 @@ h1, h2, h3 {
 
 .footer {
   height: 120px;
-  background-color: #fffac4;
+  background-color: #d0e7ec;
   text-align: center;
 }
 
 .fa {
     padding: 15px;
-    color: #ffb178;
+    color: #6e9ca6;
 }
 
 .fa:hover {
     opacity: 0.7;
-    color: #ffb178;
+    color: #6e9ca6;
     background-color: transparent;
 }
 
 .fa:visited {
     opacity: 0.7;
-    color: #ffb178;
+    color: #6e9ca6;
     background-color: transparent;
 }
 
 .footer p {
-  color: #ffb178;
+  color: #6e9ca6;
   font-family: "Josefin Sans", Arial, Sans-serif;
   font-size: 26px;
   padding-top: 10px;
@@ -272,15 +272,15 @@ h1, h2, h3 {
 }
 
 .btn-default {
-  background-color: #fffcdd;
-  color: #7f583c;
-  border-color: #b27b54;
+  background-color: #f3f9fa;
+  color: #456268;
+  border-color: #456268;
 }
 
 .btn-default:hover {
-  background-color: #ffb178;
+  background-color: #6e9ca6;
   color: #fff;
-  border-color: #cc8d60;
+  border-color:  #456268;
 }
 
 .flickr_pagination {

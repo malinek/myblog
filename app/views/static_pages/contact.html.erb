@@ -1,3 +1,5 @@
+<div class="container-fluid contact-page">
+
 <h2>You are very welcome to contact me</h2>
 
 <%= flash[:notice] %>
@@ -17,9 +19,9 @@
       <%= form.label :message %>
       <%= form.text_area :message, class: "form-control", placeholder: "Enter message", rows: 5 %>
     </div>
-    <div class="button-contactpage">
       <%= form.submit "Send", class: "form_label btn btn-default button-contactpage" %>
-    </div>
   </div><!-- end container-fluid -->
   
 <% end %>
+
+</div>

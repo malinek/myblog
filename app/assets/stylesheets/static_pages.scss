@@ -73,6 +73,10 @@
 
 /** CONTACT PAGE **/
 
+.contact-page {
+  background-image: url("feather.jpg");
+}
+
 h2 {
   padding-top: 30px;
   padding-bottom: 20px;
@@ -93,26 +97,24 @@ h2 {
 }
 
 .form-control {
-  background-color: #fffcdd;
+  background-color: #f3f9fa;
   border-style: solid;
   border-radius: 5px;
   border-width: 1px;
-  border-color: #2e271d;
+  border-color: #456268;
 }
 
 .button-contactpage {
   display: block;
   margin: auto;
   text-align: center;
-  border-color: #2e271d;
-  color: #2e271d;
-  background-color: #fffcdd;
+  border-color:  #456268;
+  color: #456268;
+  background-color: #f3f9fa;
   border-width: 1px;
 }
 
 /** THANK YOU PAGE **/
-
-
 
 .message {
   margin-top: 100px;
