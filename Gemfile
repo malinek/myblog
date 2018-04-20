@@ -33,6 +33,7 @@ gem 'devise'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
+gem 'cancancan', '~> 2.0'
 
 
 group :development, :test do
