@@ -47,7 +47,7 @@ h1, h2, h3 {
 }
 
 .navbar-inverse .navbar-nav a:hover {
-  color: #fee585;
+  color: #f36e6e;
   text-decoration: none;
   transition: color 600ms;
   -webkit-transition: color 600ms;
@@ -58,17 +58,17 @@ h1, h2, h3 {
 }
 
 .navbar-inverse .navbar-nav li a:hover {
-  color: #fee585;
+  color: #f36e6e;
 }
 
 .navbar-inverse .navbar-nav .active a {
   background-color: #5c988a;
-  color: #fee585;
+  color: #f36e6e;
 }
 
 .navbar-inverse .navbar-nav .active a:hover {
   background-color: #5c988a;
-  color: #fee585;
+  color: #f36e6e;
 }
 
 .navbar-brand {
@@ -149,12 +149,12 @@ h1, h2, h3 {
 /** HEADER INDEX PAGE**/
 
 #index-page-jumbotron {
-  background-image: url("IMG-3402.jpg");
+  background-image: url("Portugal.jpg");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
-  height: 400px;
+  height: 350px;
   margin-left: -15px;
   margin-top: -15px;
   margin-right: -15px;
@@ -170,7 +170,7 @@ h1, h2, h3 {
 
 .welcome-text h2 {
   font-family: "Josefin Sans", Amaranth, Arial, sans-serif;
-  color: #fee585;
+  color: #f3f9fa;
   text-align: left;
   margin-top: 0px;
 }
@@ -181,7 +181,7 @@ h1, h2, h3 {
   }
 
   .welcome-text h2 {
-    font-size: 20px;
+    font-size: 22px;
     padding-left: 10px;
   }
 }
@@ -342,28 +342,28 @@ h1, h2, h3 {
 }
 
 .btn-info {
-  background-color: #ffb178;
-  border-color: #cc8d60;
+  background-color: #f3f9fa;
+  border-color: #f15656;
   font-family: "Josefin Sans", Amaranth, Arial, sans-serif;
 }
 
 .btn-info:hover {
-  background-color: #fff578;
-  border-color: #ccc460;
+  background-color: #cfe7eb;
+  border-color: #f15656;
 }
 
 .btn-info a {
-  color: #19110c;
+  color: #f15656;
 }
 
 .btn-info a:hover {
-  color:  #7f583c;
+  color:  #f15656;
   text-decoration: none;
   background-color: transparent;
 }
 
 .btn-info a:visited {
-  color: #7f583c;
+  color: #456268;
 }
 
 /** SHOW PAGE **/
