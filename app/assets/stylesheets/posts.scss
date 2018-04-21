@@ -85,15 +85,19 @@ h1, h2, h3 {
 }
 
 .search-field {
-  border-color: #000;
+  color: #456256;
+  border-color: #456256;
   background-color: #f3f9fa;
   border-left: none;
   border-top: none;
   border-right: none;
   height: 30px;
-  line-height: 20px;
-  font-size: 20px;
+  width: 180px;
+  line-height: 30px;
+  font-size: 22px;
   font-family: "Open Sans Condesned:300", Sans-serif;;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 .search-field:focus {
@@ -106,6 +110,39 @@ h1, h2, h3 {
   margin-right: 15px;
   background: none;
   border: none;
+  color: #456256;
+}
+
+::placeholder {
+  color: #f36e6e;
+}
+
+.button-login {
+  height: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-style: ridge;
+  border-width: 2px;
+}
+
+.navbar-inverse .navbar-nav .login a {
+  border-color: #6e9ca6;
+  text-transform: none;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+}
+
+.navbar-inverse .navbar-nav .login a:hover {
+  background-color: #fdf0f0;
+  color: #f36e6e;
+  border-color: #f36e6e;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
 }
 
 @media (max-width: 990px) {
@@ -294,15 +331,15 @@ h1, h2, h3 {
   .flickr_pagination .current {
     font-style: normal;
     font-weight: bold;
-    color: #2e271d; }
+    color: #f15656; }
   .flickr_pagination a {
-    border: 1px solid #cc8d60;
-    color: #cc8d60;
+    border: 1px solid #f15656;
+    color: #f15656;
     text-decoration: none; }
     .flickr_pagination a:hover, .flickr_pagination a:focus {
-      border-color: #cc8d60;
-      background: #ffbd7f;
-      color: white; }
+      border-color: #456268;
+      background: #cfe7eb;
+      color: #456268; }
   .flickr_pagination .page_info {
     color: #333333;
     padding-top: 0.8em; }
@@ -434,8 +471,8 @@ h1, h2, h3 {
 }
 
 .comment-form {
-  background-color: #fffcdd;
-  border-color: #b27b54;
+  background-color: #f3f9fa;
+  border-color: #456268;
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;

@@ -50,8 +50,15 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="search-form">
               <%= form_with(url: posts_path, method: 'get', local:true) do |form| %>
-                <%= form.text_field :q, id: 'q', value: params[:q], placeholder: "SEARCH", class: "search-field" %>
+                <%= form.text_field :q, id: 'q', value: params[:q], placeholder: "Search", class: "search-field" %>
                 <%= button_tag "", type: 'submit', class: "btn submit glyphicon glyphicon-search search-button" %>
+              <% end %>
+            </li>
+            <li class="login">
+              <% if user_signed_in? %>
+                <%= link_to("Log out", destroy_user_session_path, method: :get, class: "btn btn-default button-login") %>
+              <% else %>
+                <%= link_to("Log in", new_user_session_path, class: "btn btn-default button-login") %>
               <% end %>
             </li>
           </ul>
