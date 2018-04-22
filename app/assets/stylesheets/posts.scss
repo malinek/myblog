@@ -121,12 +121,12 @@ h1, h2, h3 {
   height: 30px;
   margin-top: 10px;
   margin-right: 10px;
-  border-style: ridge;
-  border-width: 2px;
+  border-width: 1.6px;
 }
 
 .navbar-inverse .navbar-nav .login a {
-  border-color: #6e9ca6;
+  color: #456256;
+  border-color: #456256;
   text-transform: none;
   font-size: 20px;
   padding-top: 5px;
@@ -186,7 +186,7 @@ h1, h2, h3 {
 /** HEADER INDEX PAGE**/
 
 #index-page-jumbotron {
-  background-image: url("Portugal.jpg");
+  background-image: url("Portugal2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -423,6 +423,11 @@ h1, h2, h3 {
   margin-top: 40px;
 }
 
+.post-title h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .post-published-at-show p {
   font-family: "Josefin Sans", Amaranth, Arial, Sans-serif;
   font-size: 20px;
@@ -462,7 +467,7 @@ h1, h2, h3 {
 /** COMMENTS COLUMN **/
 
 .comments {
-  margin-top: 90px;
+  margin-top: 56px;
 }
 
 .comments h4 {
