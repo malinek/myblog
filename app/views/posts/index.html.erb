@@ -14,7 +14,7 @@
         <div class="post-title">
           <h2><%= post.title %></h2>
         </div>
-        <%= image_tag(post.image_url, class:"img-responsive post-img") %>
+        <%= image_tag(post.image.url(:large), class:"img-responsive post-img") %>
         <div class="post-subtitle">
           <p><%= post.subtitle %></p>
         </div>
