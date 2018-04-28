@@ -1,3 +1,4 @@
+<div class="container-fluid edit-page">
 <h1>Editing Post</h1>
 
 <%= render 'form', post: @post %>
@@ -9,3 +10,4 @@
 <%= link_to 'Edit', edit_post_path(@post) %>
 
 <%= link_to 'Destroy', @post, method: :delete, data: {confirm: 'Are you sure?' } %>
+</div>

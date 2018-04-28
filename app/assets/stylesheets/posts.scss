@@ -183,6 +183,27 @@ h1, h2, h3 {
     }
 }
 
+/** FLASH NOTICE & ALERT **/
+
+#notice, #alert {
+  display: block;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#notice {
+  background-color: #fdf0f0;
+  border-color: #f36e6e;
+  color: #f36e6e;
+}
+
+#alert {
+  background-color: #ed2727;
+  border-color: #470b0b;
+  color: #470b0b;
+}
+
 /** HEADER INDEX PAGE**/
 
 #index-page-jumbotron {
@@ -496,22 +517,5 @@ h1, h2, h3 {
   height: 24px;
 }
 
-#notice, #alert {
-  display: block;
-  margin: auto;
-  text-align: center;
-  margin-top: 10px;
-}
-
-#notice {
-  background-color: #fff578;
-  border-color: #ccc460;
-  color: #2e271d;
-}
-
-#alert {
-  background-color: #f28224;
-  border-color: #a95b19;
-  color: #ff0000;
-}
+/** EDIT PAGE **/
 
