@@ -9,15 +9,15 @@
     <h2>You are very welcome to contact me</h2>
     <div class="form-group">
       <%= form.label :name %>
-      <%= form.text_field :name, class: "form-control", placeholder: "Enter name" %>
+      <%= form.text_field :name, class: "form-control", placeholder: "Enter name*" %>
     </div>
     <div class="form-group">
       <%= form.label :email %>
-      <%= form.text_field :email, class: "form-control", placeholder: "Enter email" %>
+      <%= form.text_field :email, class: "form-control", placeholder: "Enter email*" %>
     </div>
     <div class="form-group">
       <%= form.label :message %>
-      <%= form.text_area :message, class: "form-control", placeholder: "Enter message", rows: 5 %>
+      <%= form.text_area :message, class: "form-control", placeholder: "Enter message*", rows: 5 %>
     </div>
       <%= form.submit "Send", class: "form_label btn btn-default button-contactpage" %>
   </div><!-- end container-fluid -->
