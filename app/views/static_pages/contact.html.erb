@@ -1,23 +1,21 @@
 <div class="container-fluid contact-page">
 
-
-
 <%= flash[:notice] %>
 
 <%= form_with(url:"/static_pages/thank_you", method: "post", local: true) do |form| %>
   <div class="container-fluid col-xs-12 col-sm-8 col-md-4 col-lg-4 col-md-offset-2 col-lg-offset-2">
     <h2>You are very welcome to contact me</h2>
     <div class="form-group">
-      <%= form.label :name %>
-      <%= form.text_field :name, class: "form-control", placeholder: "Enter name*" %>
+      <%= form.label(:name, "Name*") %>
+      <%= form.text_field :name, class: "form-control", placeholder: "Enter name", required: true %>
     </div>
     <div class="form-group">
-      <%= form.label :email %>
-      <%= form.text_field :email, class: "form-control", placeholder: "Enter email*" %>
+      <%= form.label(:email, "Email*") %>
+      <%= form.text_field :email, class: "form-control", placeholder: "Enter email", required: true %>
     </div>
     <div class="form-group">
-      <%= form.label :message %>
-      <%= form.text_area :message, class: "form-control", placeholder: "Enter message*", rows: 5 %>
+      <%= form.label(:message, "Message*") %>
+      <%= form.text_area :message, class: "form-control", placeholder: "Enter message", rows: 5, required: true %>
     </div>
       <%= form.submit "Send", class: "form_label btn btn-default button-contactpage" %>
   </div><!-- end container-fluid -->

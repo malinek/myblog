@@ -110,6 +110,7 @@ h2 {
   display: block;
   margin: auto;
   text-align: center;
+  width: 100px;
   border-color:  #456268;
   color: #456268;
   background-color: #f3f9fa;
@@ -120,10 +121,16 @@ h2 {
 
 .message {
   margin-top: 100px;
-  background-color: #fffcdd;
+  background-color: #f3f9fa;
   border-style: double;
   border-width: 10px;
-  border-color: #2e271d;
+  border-radius: 10px;
+  border-color: #456256;
+  color: #456256;
+}
+
+.link a:hover {
+  color: #f15656;
 }
 
 @media (max-width: 768px) {
