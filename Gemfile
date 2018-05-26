@@ -36,6 +36,8 @@ gem 'bootstrap-sass'
 gem 'cancancan', '~> 2.0'
 gem 'paperclip', '~> 6.0.0'
 gem 'glyphicons-rails', '~> 0.1.2'
+gem 'aws-sdk', '~> 2.6'
+gem 'figaro'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
