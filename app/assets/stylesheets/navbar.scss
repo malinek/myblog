@@ -45,16 +45,11 @@
   position: absolute;
   vertical-align: top;
   padding: 0px;
-  /*float: none;
-  position: absolute;
-  display: block;
-  text-align: center;
-  width: 100%;
-  padding: 0px;*/
 } 
 
 .search-form {
   margin-top: 6px;
+  margin-left: 15px;
 }
 
 .search-field {
@@ -92,9 +87,11 @@
 
 .button-login {
   height: 30px;
+  margin-left: 15px;
   margin-top: 10px;
-  margin-right: 10px;
+  margin-right: 26px;
   border-width: 1.6px;
+  width: 84px;
 }
 
 .navbar-inverse .navbar-nav .login a {

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <title>Movelikeaswift</title>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -21,66 +22,15 @@
 
   <div class="page-wrap">
 
-  <!-- NAVIGATION BAR -->
-  
-  <nav class="navbar navbar-inverse navbar-fixed-top"  role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toogle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">
-            <div><%= image_tag("logonew.png", size: "249x48") %></div>
-          </a>
-        </div><!-- end navbar-header -->
+    <%= render 'shared/navigation_bar' %>
 
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-left">
-            <li><%= link_to "Home", posts_path %></li>
-            <li><%= link_to "About", static_pages_about_path %></li>
-            <li><%= link_to "Contact", static_pages_contact_path %></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="search-form">
-              <%= form_with(url: posts_path, method: 'get', local:true) do |form| %>
-                <%= form.text_field :q, id: 'q', value: params[:q], placeholder: "Search", class: "search-field" %>
-                <%= button_tag "", type: 'submit', class: "btn submit glyphicon glyphicon-search search-button" %>
-              <% end %>
-            </li>
-            <li class="login">
-              <% if user_signed_in? %>
-                <%= link_to("Log out", destroy_user_session_path, method: :get, class: "btn btn-default button-login") %>
-              <% else %>
-                <%= link_to("Log in", new_user_session_path, class: "btn btn-default button-login") %>
-              <% end %>
-            </li>
-          </ul>
-        </div><!-- end navbar-collapse collapse" -->
-      </div><!-- end container-fluid -->
-    
-    </nav><!-- END NAVIGATION BAR -->
- 
-  <% if notice %>
-    <p id="notice" class="alert alert-warning" role="notice"><%= notice %></p>
-  <% end %>
-  <% if alert %>
-    <p id="alert" class="alert alert-warning" role="alert"><%= alert %></p>
-  <% end %>
+    <%= render 'shared/alerts' %>
 
-  <%= yield %>
+    <%= yield %>
 
   </div><!-- end page-wrap -->
 
-  <footer class="footer">
-    <div class="footer-icons">
-      <a href="https://www.instagram.com/movelikeaswift/" target="_blank" class="fa fa-instagram fa-3x"></a>
-      <a href="https://www.pinterest.se/ekemal/" target="_blank" class="fa fa-pinterest fa-3x"></a>
-    </div>
-    <p>&copy; movelikeaswift 2018</p>
-  </footer>
+    <%= render 'shared/footer' %>
 
 </body>
 </html>

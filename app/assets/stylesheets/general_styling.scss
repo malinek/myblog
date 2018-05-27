@@ -1,0 +1,50 @@
+/** GENERAL STYLING **/
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom:-120px; /* equal to footer height */
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+  height: 120px;
+}
+
+h1, h2, h3 {
+  font-family: Abel, Arial, sans-serif;
+  text-align: center;
+}
+
+/** FLASH NOTICE & ALERT **/
+
+#notice, #alert {
+  display: block;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#notice {
+  background-color: #fdf0f0;
+  border-color: #f36e6e;
+  color: #f36e6e;
+}
+
+#alert {
+  background-color: #ed2727;
+  border-color: #470b0b;
+  color: #470b0b;
+}
